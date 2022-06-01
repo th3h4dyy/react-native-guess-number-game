@@ -10,6 +10,7 @@
 - Expo Linear Gradient.
 - FlatList.
 - Custom Components (e.g Title, PrimaryButton, NumberContainer, etc..).
+- Support different screen sizes, modes and different platforms.
 
 
 ### Live Demo:
