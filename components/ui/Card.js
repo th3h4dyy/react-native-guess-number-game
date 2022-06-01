@@ -1,8 +1,17 @@
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, useWindowDimensions } from 'react-native';
 import Colors from '../../constants/colors';
 
 function Card({ children }) {
-  return <View style={styles.card}>{children}</View>;
+  const { width } = useWindowDimensions();
+
+  const marginHorizontalDimension = width > 400 ? 100 : 24;
+  return (
+    <View
+      style={[styles.card, { marginHorizontal: marginHorizontalDimension }]}
+    >
+      {children}
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
